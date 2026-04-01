@@ -3,6 +3,7 @@ A simple Bash script (no dependencies, quick to run)
 
 # How to use :  
    chmod +x cpu-monitor.sh
+   
   ./cpu-monitor.sh
 
   
