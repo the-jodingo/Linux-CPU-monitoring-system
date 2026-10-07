@@ -39,7 +39,7 @@ while true; do
     if command -v mpstat >/dev/null 2>&1; then
         mpstat -P ALL 1 1 | tail -n +4 | head -n -1 | awk '{print "Core " $2 ": " 100-$12 "%"}'
     else
-        top -bn1 | grep '^%Cpu' -A $(nproc) | tail -n +2 | awk '{print "Core " NR-1 ": ~" (100-$8) "%"}' 2>/dev/null || echo "Install sysstat for better per-core stats: sudo apt install sysstat"
+        top -bn1 | grep '^%Cpu' -A "$(nproc)" | tail -n +2 | awk '{print "Core " NR-1 ": ~" (100-$8) "%"}' 2>/dev/null || echo "Install sysstat for better per-core stats: sudo apt install sysstat"
     fi
     
     # Top 10 CPU-consuming processes
