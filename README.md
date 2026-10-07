@@ -1,3 +1,8 @@
+[![Bash](https://img.shields.io/badge/Bash-4%2B-4EAA25?logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
+[![Platform](https://img.shields.io/badge/platform-Linux-lightgrey)](https://www.kernel.org/)
+[![No dependencies](https://img.shields.io/badge/dependencies-none-brightgreen)](https://www.kernel.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 # Linux CPU Monitoring System
 
 A dependency-free Bash script that prints overall CPU usage, per-core usage,
